@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Naval_Andhyal\\source\\repos\\EcommerceMicroservices\\Ecommerce\\Ecommerce.Api.Customers\\Ecommerce.Api.Customers.csproj": {}
+    "C:\\Users\\Naval_Andhyal\\source\\repos\\EcommerceMicroservices\\Ecommerce\\Ecommerce\\Ecommerce.Api.Customers\\Ecommerce.Api.Customers.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Naval_Andhyal\\source\\repos\\EcommerceMicroservices\\Ecommerce\\Ecommerce.Api.Customers\\Ecommerce.Api.Customers.csproj": {
+    "C:\\Users\\Naval_Andhyal\\source\\repos\\EcommerceMicroservices\\Ecommerce\\Ecommerce\\Ecommerce.Api.Customers\\Ecommerce.Api.Customers.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Naval_Andhyal\\source\\repos\\EcommerceMicroservices\\Ecommerce\\Ecommerce.Api.Customers\\Ecommerce.Api.Customers.csproj",
+        "projectUniqueName": "C:\\Users\\Naval_Andhyal\\source\\repos\\EcommerceMicroservices\\Ecommerce\\Ecommerce\\Ecommerce.Api.Customers\\Ecommerce.Api.Customers.csproj",
         "projectName": "Ecommerce.Api.Customers",
-        "projectPath": "C:\\Users\\Naval_Andhyal\\source\\repos\\EcommerceMicroservices\\Ecommerce\\Ecommerce.Api.Customers\\Ecommerce.Api.Customers.csproj",
+        "projectPath": "C:\\Users\\Naval_Andhyal\\source\\repos\\EcommerceMicroservices\\Ecommerce\\Ecommerce\\Ecommerce.Api.Customers\\Ecommerce.Api.Customers.csproj",
         "packagesPath": "C:\\Users\\Naval_Andhyal\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Naval_Andhyal\\source\\repos\\EcommerceMicroservices\\Ecommerce\\Ecommerce.Api.Customers\\obj\\",
+        "outputPath": "C:\\Users\\Naval_Andhyal\\source\\repos\\EcommerceMicroservices\\Ecommerce\\Ecommerce\\Ecommerce.Api.Customers\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Sau6MsFUA/pq4VvC85TwDfjHu8AAY7eV5Xeyw7p0701jjRrP8DcY9+HoNeG8yVBNCz6qbzm9wuL2pFpgqmzY9g==",
+  "dgSpecHash": "3vih73vpR7mpLEbZN8f+/0FCna7Ddx5A+Q9hdIOf+2mY3y7nspw3V4p9OFpCMJ7rXTz3dbVfhjcuLhYAOcmUvA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Naval_Andhyal\\source\\repos\\EcommerceMicroservices\\Ecommerce\\Ecommerce.Api.Search\\Ecommerce.Api.Search.csproj",
+  "projectFilePath": "C:\\Users\\Naval_Andhyal\\source\\repos\\EcommerceMicroservices\\Ecommerce\\Ecommerce\\Ecommerce.Api.Search\\Ecommerce.Api.Search.csproj",
   "expectedPackageFiles": [
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\Naval_Andhyal\\.nuget\\packages\\microsoft.data.sqlclient\\2.0.1\\microsoft.data.sqlclient.2.0.1.nupkg.sha512",

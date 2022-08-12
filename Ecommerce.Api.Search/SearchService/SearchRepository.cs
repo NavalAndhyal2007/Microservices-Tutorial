@@ -1,6 +1,7 @@
 ﻿using Ecommerce.Api.Search.CustomersService;
 using Ecommerce.Api.Search.Models;
 using Ecommerce.Api.Search.OrdersService;
+using Ecommerce.Api.Search.ProductCategoryService;
 using Ecommerce.Api.Search.ProductsService;
 using System;
 using System.Collections.Generic;
@@ -14,12 +15,14 @@ namespace Ecommerce.Api.Search.SearchService
         private readonly IOrdersService ordersService;
         private readonly IProductService productService;
         private readonly ICustomerService customerService;
+        private readonly IProductsCategoryService productsCategoryService;
 
-        public SearchRepository(IOrdersService ordersService,IProductService productService,ICustomerService customerService)
+        public SearchRepository(IOrdersService ordersService,IProductService productService,ICustomerService customerService, IProductsCategoryService productsCategoryService)
         {
             this.ordersService = ordersService;
             this.productService = productService;
             this.customerService = customerService;
+            this.productsCategoryService = productsCategoryService;
         }
         public async Task<(bool IsSuccess, dynamic Result, string ShowErrorMessage)> SearchAsync(int CustomerId)
         {
@@ -33,6 +36,10 @@ namespace Ecommerce.Api.Search.SearchService
                     {
                         var ProductResult = await productService.GetProductsAsync(item.ProductId);
                         item.ProductName = ProductResult.IsSuccess ? ProductResult.Product.Name : "Product Information Not Available";
+
+                        //productsCategoryService.Show();
+                        var ProductsCategoryResult = await productsCategoryService.GetProductCategoryAsync(ProductResult.Product.CategoryId);
+                        item.CategoryName = ProductsCategoryResult.IsSuccess ? ProductsCategoryResult.ProductCategory.Name : "Product Category Information Not Available";
                     }
                 }
                 var retVal = new

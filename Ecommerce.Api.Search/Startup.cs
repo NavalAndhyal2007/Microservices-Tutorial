@@ -1,5 +1,6 @@
 using Ecommerce.Api.Search.CustomersService;
 using Ecommerce.Api.Search.OrdersService;
+using Ecommerce.Api.Search.ProductCategoryService;
 using Ecommerce.Api.Search.ProductsService;
 using Ecommerce.Api.Search.SearchService;
 using Microsoft.AspNetCore.Builder;
@@ -33,6 +34,7 @@ namespace Ecommerce.Api.Search
             services.AddScoped<IOrdersService, OrderService>();
             services.AddScoped<IProductService, ProductService>();
             services.AddScoped<ICustomerService, CustomerService>();
+            services.AddScoped<IProductsCategoryService, ProductsCategoryService>();
 
             services.AddHttpClient("OrdersService", configureClient =>
             {
@@ -46,6 +48,11 @@ namespace Ecommerce.Api.Search
             {
                 configureClient.BaseAddress = new Uri(Configuration["Services:Customers"]);
             }).AddTransientHttpErrorPolicy(p => p.WaitAndRetryAsync(5, _ => TimeSpan.FromMilliseconds(500)));
+            services.AddHttpClient("ProductsCategoryService", configureClient =>
+            {
+                configureClient.BaseAddress = new Uri(Configuration["Services:ProductsCategory"]);
+            }).AddTransientHttpErrorPolicy(p => p.WaitAndRetryAsync(5, _ => TimeSpan.FromMilliseconds(500)));
+            //ProductsCategory
             services.AddControllers();
         }
 
